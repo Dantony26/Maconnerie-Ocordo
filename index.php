@@ -17,10 +17,10 @@ require('functions/title.php');
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <div class="navbar-nav">
-                <a class="nav-link" href="accueil.php">Accueil</a>
-                <a class="nav-link" href="qui-sommes-nous.php">Qui sommes nous?</a>
-                <a class="nav-link" href="nos-clients-temoignent.php">Nos clients témoignent</a>
-                <a class="nav-link" href="contact.php">Contact</a>
+                <a class="nav-link" href="accueil">Accueil</a>
+                <a class="nav-link" href="qui-sommes-nous">Qui sommes nous?</a>
+                <a class="nav-link" href="nos-clients-temoignent">Nos clients témoignent</a>
+                <a class="nav-link" href="contact">Contact</a>
             </div>
         </div>
     </nav>
