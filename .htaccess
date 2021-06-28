@@ -1,6 +1,6 @@
 Options +FollowSymlinks
 RewriteEngine on
 RewriteRule ^accueil.php$  index.php?id=1 [L]
-RewriteRule ^qui-somme-nous.php$  index.php?id=2 [L]
+RewriteRule ^qui-sommes-nous.php$  index.php?id=2 [L]
 RewriteRule ^nos-clients-temoignent.php$  index.php?id=3 [L]
 RewriteRule ^contact.php$  index.php?id=4 [L]
