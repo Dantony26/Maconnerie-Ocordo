@@ -33,7 +33,8 @@ require('functions/title.php');
     <div class="container-md mt-5">
         <?php
         if (isset($_GET['id'])) {
-            switch ($_GET['id']) {
+            $getId = htmlspecialchars(trim($_GET['id']));
+            switch ($getId) {
                 case 1:
                     echo $xml->page[0]->content;
                     break;

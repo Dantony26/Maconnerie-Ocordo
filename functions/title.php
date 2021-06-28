@@ -3,7 +3,8 @@
 function title() {
     $xml = simplexml_load_file('utilities/source.xml');
     if (isset($_GET['id'])) {
-        switch ($_GET['id']) {
+        $getId = htmlspecialchars(trim($_GET['id']));
+        switch ($getId) {
             case 1:
                 echo $xml->page[0]->title;
                 break;
