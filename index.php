@@ -1,6 +1,6 @@
 <?php
 $xml = simplexml_load_file('utilities/source.xml');
-$content = $xml->page[0]->content;
+require('functions/title.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,7 +10,7 @@ $content = $xml->page[0]->content;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title><?= title();?></title>
 </head>
 
 <body>
@@ -25,7 +25,34 @@ $content = $xml->page[0]->content;
         </div>
     </nav>
     <div class="container">
-        <?= $content; ?>
+        <?php
+        if (isset($_GET['id'])) {
+            switch ($_GET['id']) {
+                case 1:
+                    $content = $xml->page[0]->content;
+                    echo $content;
+                    break;
+                case 2:
+                    $content = $xml->page[1]->content;
+                    echo $content;
+                    break;
+                case 3:
+                    $content = $xml->page[2]->content;
+                    echo $content;
+                    break;
+                case 4:
+                    $content = $xml->page[3]->content;
+                    echo $content;
+                    break;
+                default:
+                    echo "error";
+            }
+        } else {
+            $content = $xml->page[0]->content;
+            echo $content;
+        }
+
+        ?>
     </div>
 </body>
 
