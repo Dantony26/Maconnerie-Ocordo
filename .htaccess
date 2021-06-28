@@ -1,10 +1,5 @@
 RewriteEngine on
 
-#remove extension php
-RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteCond %{REQUEST_FILENAME}\.php -f 
-RewriteRule ^(.*)$ $1.php
-
 RewriteRule ^accueil$  index.php?id=1 [L]
 RewriteRule ^qui-sommes-nous$  index.php?id=2 [L]
 RewriteRule ^nos-clients-temoignent$  index.php?id=3 [L]

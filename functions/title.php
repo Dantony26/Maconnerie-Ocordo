@@ -5,27 +5,23 @@ function title() {
     if (isset($_GET['id'])) {
         switch ($_GET['id']) {
             case 1:
-                $title = $xml->page[0]->title;
-                echo $title;
+                echo $xml->page[0]->title;
                 break;
             case 2:
-                $title = $xml->page[1]->title;
-                echo $title;
+                echo $xml->page[1]->title;
                 break;
             case 3:
-                $title = $xml->page[2]->title;
-                echo $title;
+                echo $xml->page[2]->title;
                 break;
             case 4:
-                $title = $xml->page[3]->title;
-                echo $title;
+                echo $xml->page[3]->title;
                 break;
             default:
                 echo "error";
                 break;
         }
     } else {
-        $title = $xml->page[0]->title;
-        echo $title;
+        
+        echo "Maçonnerie Ocordo";
     }
 }
