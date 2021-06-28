@@ -22,6 +22,7 @@ function title() {
                 break;
             default:
                 echo "error";
+                break;
         }
     } else {
         $title = $xml->page[0]->title;

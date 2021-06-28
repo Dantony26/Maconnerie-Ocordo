@@ -46,6 +46,7 @@ require('functions/title.php');
                     break;
                 default:
                     echo "error";
+                    break;
             }
         } else {
             $content = $xml->page[0]->content;
